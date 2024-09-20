@@ -1,9 +1,11 @@
 # Note:
 # Use something like this: conda create --name modernaipro python=3.11 --file requirements.txt
 # conda activate modernaipro
-
+# Install gemma2 2gb model on your local machine
+# ollama pull gemma2:2b
+# Execute <BasePath>\modernaipro\0. basic_llm> python .\1_langchain-1.py
 from langchain_community.llms import Ollama
-llm = Ollama(model="gemma2:2b") # try qwen2 / llama3 if you have that model
+llm = Ollama(model="qwen") # try qwen2 / llama3/gemma2:2b if you have that model
 
 
 for chunks in llm.stream("Write me a poem about Ramayan in 3 sentences"):

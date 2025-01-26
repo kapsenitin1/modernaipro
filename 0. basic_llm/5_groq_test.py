@@ -8,8 +8,7 @@ load_dotenv()
 # Model names
 models = {
     "mixtral-8x7b-32768": "Mixtral 8x7b 32768",
-    "llama3-70b-8192": "Llama3 70b 8192",
-    "gemma-7b-it": "Gemma 7b IT"
+    "llama3-70b-8192": "Llama3 70b 8192"
 }
 
 # Test each model
